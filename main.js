@@ -55,3 +55,12 @@ const cars = [
 // console.log("Auto a diesel: ", diesel)
 // console.log("Altre auto : ", other)
 
+// metodo con filter
+
+const benzina = cars.filter(car => car.fuel === "benzina")
+const diesel = cars.filter(car => car.fuel === "diesel")
+const other = cars.filter(car => car.fuel !== "benzina" && car.fuel !== "diesel")
+
+console.log("Auto a benzina: ", benzina)
+console.log("Auto a diesel: ", diesel)
+console.log("Altre auto : ", other)
