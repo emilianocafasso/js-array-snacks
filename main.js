@@ -13,25 +13,45 @@ const cars = [
   { brand: 'Peugeot', model: '208', fuel: 'metano' }
 ]
 
-// creo array per dividere le auto in base al fuel
-const benzinacars = []
-const dieselcars = []
-const otherCars = []
-
 // metodo con for
-for(let i=0; i<cars.length; i++) {
-    currentcar = cars[i]
-    if(currentcar.fuel==='benzina') {
-        benzinacars.push(currentcar)
-    }
-    else if (currentcar.fuel==='diesel'){
-        dieselcars.push(currentcar)
-    }
-    else {
-        otherCars.push(currentcar)
-    }
-}
-console.log(benzinacars, dieselcars, otherCars);
 
-// metodo
+// const benzinacars = []
+// const dieselcars = []
+// const othercars = []
+
+// for(let i=0; i<cars.length; i++) {
+//     currentcar = cars[i]
+//     if(currentcar.fuel==='benzina') {
+//         benzinacars.push(currentcar)
+//     }
+//     else if (currentcar.fuel==='diesel'){
+//         dieselcars.push(currentcar)
+//     }
+//     else {
+//         othercars.push(currentcar)
+//     }
+// }
+// console.log("Auto a benzina: ", benzinacars)
+// console.log("Auto a diesel: ", dieselcars)
+// console.log("Altre auto : ", othercars)
+
+
+// metodo con foreach
+
+// const benzina = []
+// const diesel = []
+// const other = []
+
+// cars.forEach(car => {
+//     if(car.fuel === "benzina") {
+//         benzina.push(car)
+//     } else if(car.fuel === "diesel") {
+//         diesel.push(car)
+//     } else {
+//         other.push(car)
+//     }
+// })
+// console.log("Auto a benzina: ", benzina)
+// console.log("Auto a diesel: ", diesel)
+// console.log("Altre auto : ", other)
 
